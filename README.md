@@ -1,5 +1,5 @@
-# Single-Cycle-Pipelined-Processor-Design
-Designed a Single Cycle 6-stage pipelined Processor which can execute 26 different instructions and implemented it in code in VHDL
+# Pipelined-Processor-Design
+Designed a 6-stage pipelined Processor which can execute 26 different instructions and implemented it in code in VHDL
 
 ## Course Project - Microprocessors (EE309)
 ### Team Members -
