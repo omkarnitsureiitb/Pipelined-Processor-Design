@@ -1,0 +1,675 @@
+Analysis & Synthesis report for DUT
+Sat May 06 22:11:22 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "Processor:add_instance|pipelineReg5:pipReg5"
+ 10. Port Connectivity Checks: "Processor:add_instance|stage4:st4|ADD:t1_adder"
+ 11. Port Connectivity Checks: "Processor:add_instance|stage4:st4|ALU:ALU3|SUBTRACT:Sub1|ADD_4BIT:Adder1"
+ 12. Port Connectivity Checks: "Processor:add_instance|stage4:st4|ADD:ADDER4"
+ 13. Port Connectivity Checks: "Processor:add_instance|stage4:st4|ADD:ADDER2|ADD_4BIT:Adder1"
+ 14. Port Connectivity Checks: "Processor:add_instance|stage4:st4|ADD:ADDER2"
+ 15. Port Connectivity Checks: "Processor:add_instance|stage4:st4|mux16to1:mux_6"
+ 16. Port Connectivity Checks: "Processor:add_instance|stage4:st4|bitReg:bit_Z_reg"
+ 17. Port Connectivity Checks: "Processor:add_instance|stage4:st4|bitReg:bit_C_reg"
+ 18. Port Connectivity Checks: "Processor:add_instance|Stage1:st1|PC_Incrementer:PC_inc|ADD_4BIT:Adder4"
+ 19. Port Connectivity Checks: "Processor:add_instance|Stage1:st1|PC_Incrementer:PC_inc|ADD_4BIT:Adder3"
+ 20. Port Connectivity Checks: "Processor:add_instance|Stage1:st1|PC_Incrementer:PC_inc|ADD_4BIT:Adder2"
+ 21. Port Connectivity Checks: "Processor:add_instance|Stage1:st1|PC_Incrementer:PC_inc|ADD_4BIT:Adder1"
+ 22. Post-Synthesis Netlist Statistics for Top Partition
+ 23. Elapsed Time Per Partition
+ 24. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat May 06 22:11:22 2023       ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                      ; DUT                                         ;
+; Top-level Entity Name              ; DUT                                         ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 4                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 10M25SAE144C8G     ;                    ;
+; Top-level entity name                                            ; DUT                ; DUT                ;
+; Family name                                                      ; MAX 10             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                   ;
++----------------------------------+-----------------+-----------------+-----------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path            ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------+---------+
+; zero_appender_Imm.vhd            ; yes             ; User VHDL File  ; D:/IITB-RISC-23/zero_appender_Imm.vhd   ;         ;
+; zero_appender_Carry.vhd          ; yes             ; User VHDL File  ; D:/IITB-RISC-23/zero_appender_Carry.vhd ;         ;
+; XOR_16.vhd                       ; yes             ; User VHDL File  ; D:/IITB-RISC-23/XOR_16.vhd              ;         ;
+; SUBTRACT.vhd                     ; yes             ; User VHDL File  ; D:/IITB-RISC-23/SUBTRACT.vhd            ;         ;
+; Stage6.vhd                       ; yes             ; User VHDL File  ; D:/IITB-RISC-23/Stage6.vhd              ;         ;
+; Stage5.vhd                       ; yes             ; User VHDL File  ; D:/IITB-RISC-23/Stage5.vhd              ;         ;
+; Stage4.vhd                       ; yes             ; User VHDL File  ; D:/IITB-RISC-23/Stage4.vhd              ;         ;
+; stage3.vhd                       ; yes             ; User VHDL File  ; D:/IITB-RISC-23/stage3.vhd              ;         ;
+; Stage2.vhd                       ; yes             ; User VHDL File  ; D:/IITB-RISC-23/Stage2.vhd              ;         ;
+; Stage1.vhd                       ; yes             ; User VHDL File  ; D:/IITB-RISC-23/Stage1.vhd              ;         ;
+; SE9.vhd                          ; yes             ; User VHDL File  ; D:/IITB-RISC-23/SE9.vhd                 ;         ;
+; SE6.vhd                          ; yes             ; User VHDL File  ; D:/IITB-RISC-23/SE6.vhd                 ;         ;
+; Register_file.vhd                ; yes             ; User VHDL File  ; D:/IITB-RISC-23/Register_file.vhd       ;         ;
+; reg_with_reset.vhd               ; yes             ; User VHDL File  ; D:/IITB-RISC-23/reg_with_reset.vhd      ;         ;
+; Processor.vhd                    ; yes             ; User VHDL File  ; D:/IITB-RISC-23/Processor.vhd           ;         ;
+; Priority_encoder.vhd             ; yes             ; User VHDL File  ; D:/IITB-RISC-23/Priority_encoder.vhd    ;         ;
+; pipelineReg5.vhd                 ; yes             ; User VHDL File  ; D:/IITB-RISC-23/pipelineReg5.vhd        ;         ;
+; pipelineReg4.vhd                 ; yes             ; User VHDL File  ; D:/IITB-RISC-23/pipelineReg4.vhd        ;         ;
+; pipelineReg3.vhd                 ; yes             ; User VHDL File  ; D:/IITB-RISC-23/pipelineReg3.vhd        ;         ;
+; pipelineReg2.vhd                 ; yes             ; User VHDL File  ; D:/IITB-RISC-23/pipelineReg2.vhd        ;         ;
+; pipelineReg1.vhd                 ; yes             ; User VHDL File  ; D:/IITB-RISC-23/pipelineReg1.vhd        ;         ;
+; PC_Incrementer.vhd               ; yes             ; User VHDL File  ; D:/IITB-RISC-23/PC_Incrementer.vhd      ;         ;
+; NOR_ZBIT.vhd                     ; yes             ; User VHDL File  ; D:/IITB-RISC-23/NOR_ZBIT.vhd            ;         ;
+; NAND_16.vhd                      ; yes             ; User VHDL File  ; D:/IITB-RISC-23/NAND_16.vhd             ;         ;
+; mux16to1.vhd                     ; yes             ; User VHDL File  ; D:/IITB-RISC-23/mux16to1.vhd            ;         ;
+; mux4to1_for_BLE.vhd              ; yes             ; User VHDL File  ; D:/IITB-RISC-23/mux4to1_for_BLE.vhd     ;         ;
+; mux4to1_3bits.vhd                ; yes             ; User VHDL File  ; D:/IITB-RISC-23/mux4to1_3bits.vhd       ;         ;
+; mux4to1.vhd                      ; yes             ; User VHDL File  ; D:/IITB-RISC-23/mux4to1.vhd             ;         ;
+; mux2x1_16.vhd                    ; yes             ; User VHDL File  ; D:/IITB-RISC-23/mux2x1_16.vhd           ;         ;
+; mux2to1_16bits.vhd               ; yes             ; User VHDL File  ; D:/IITB-RISC-23/mux2to1_16bits.vhd      ;         ;
+; mux2to1_3bits.vhd                ; yes             ; User VHDL File  ; D:/IITB-RISC-23/mux2to1_3bits.vhd       ;         ;
+; MUX_8To1.vhd                     ; yes             ; User VHDL File  ; D:/IITB-RISC-23/MUX_8To1.vhd            ;         ;
+; mux_2to1_8.vhd                   ; yes             ; User VHDL File  ; D:/IITB-RISC-23/mux_2to1_8.vhd          ;         ;
+; InstructionMemory.vhd            ; yes             ; User VHDL File  ; D:/IITB-RISC-23/InstructionMemory.vhd   ;         ;
+; hazard_unit.vhd                  ; yes             ; User VHDL File  ; D:/IITB-RISC-23/hazard_unit.vhd         ;         ;
+; Gates.vhd                        ; yes             ; User VHDL File  ; D:/IITB-RISC-23/Gates.vhd               ;         ;
+; DUT.vhd                          ; yes             ; User VHDL File  ; D:/IITB-RISC-23/DUT.vhd                 ;         ;
+; data_memory.vhd                  ; yes             ; User VHDL File  ; D:/IITB-RISC-23/data_memory.vhd         ;         ;
+; controller.vhd                   ; yes             ; User VHDL File  ; D:/IITB-RISC-23/controller.vhd          ;         ;
+; complementer.vhd                 ; yes             ; User VHDL File  ; D:/IITB-RISC-23/complementer.vhd        ;         ;
+; bitRegister.vhd                  ; yes             ; User VHDL File  ; D:/IITB-RISC-23/bitRegister.vhd         ;         ;
+; ALU.vhd                          ; yes             ; User VHDL File  ; D:/IITB-RISC-23/ALU.vhd                 ;         ;
+; ADD_4BIT.vhd                     ; yes             ; User VHDL File  ; D:/IITB-RISC-23/ADD_4BIT.vhd            ;         ;
+; ADD.vhd                          ; yes             ; User VHDL File  ; D:/IITB-RISC-23/ADD.vhd                 ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------+---------+
+
+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+;                                             ;                 ;
+; Total combinational functions               ; 0               ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 0               ;
+;     -- 3 input functions                    ; 0               ;
+;     -- <=2 input functions                  ; 0               ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 0               ;
+;     -- arithmetic mode                      ; 0               ;
+;                                             ;                 ;
+; Total registers                             ; 0               ;
+;     -- Dedicated logic registers            ; 0               ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 4               ;
+;                                             ;                 ;
+; Embedded Multiplier 9-bit elements          ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; input_vector[0] ;
+; Maximum fan-out                             ; 1               ;
+; Total fan-out                               ; 4               ;
+; Average fan-out                             ; 0.50            ;
++---------------------------------------------+-----------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; |DUT                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 4    ; 0            ; 0          ; |DUT                ; DUT         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processor:add_instance|pipelineReg5:pipReg5"                                                     ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                             ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
+; output5[198..195] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; output5[185..179] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; output5[175..155] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; output5[153..145] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; output5[143..133] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; output5[129..64]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; output5[31..16]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processor:add_instance|stage4:st4|ADD:t1_adder"                                         ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; b[15..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; b[0]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; c_add    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processor:add_instance|stage4:st4|ALU:ALU3|SUBTRACT:Sub1|ADD_4BIT:Adder1" ;
++------+-------+----------+----------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                    ;
++------+-------+----------+----------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at VCC                                                               ;
++------+-------+----------+----------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processor:add_instance|stage4:st4|ADD:ADDER4"                                        ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; c_add ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processor:add_instance|stage4:st4|ADD:ADDER2|ADD_4BIT:Adder1" ;
++------+-------+----------+----------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                        ;
++------+-------+----------+----------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                   ;
++------+-------+----------+----------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processor:add_instance|stage4:st4|ADD:ADDER2"                                        ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; c_add ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processor:add_instance|stage4:st4|mux16to1:mux_6" ;
++-----------+-------+----------+-----------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                       ;
++-----------+-------+----------+-----------------------------------------------+
+; d6[15..2] ; Input ; Info     ; Stuck at GND                                  ;
+; d6[1]     ; Input ; Info     ; Stuck at VCC                                  ;
+; d6[0]     ; Input ; Info     ; Stuck at GND                                  ;
++-----------+-------+----------+-----------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processor:add_instance|stage4:st4|bitReg:bit_Z_reg" ;
++------+-------+----------+------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                              ;
++------+-------+----------+------------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                         ;
++------+-------+----------+------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processor:add_instance|stage4:st4|bitReg:bit_C_reg" ;
++------+-------+----------+------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                              ;
++------+-------+----------+------------------------------------------------------+
+; en   ; Input ; Info     ; Stuck at VCC                                         ;
++------+-------+----------+------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processor:add_instance|Stage1:st1|PC_Incrementer:PC_inc|ADD_4BIT:Adder4"             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                             ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+; b     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; c_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processor:add_instance|Stage1:st1|PC_Incrementer:PC_inc|ADD_4BIT:Adder3" ;
++------+-------+----------+---------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                   ;
++------+-------+----------+---------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                              ;
++------+-------+----------+---------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processor:add_instance|Stage1:st1|PC_Incrementer:PC_inc|ADD_4BIT:Adder2" ;
++------+-------+----------+---------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                   ;
++------+-------+----------+---------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                              ;
++------+-------+----------+---------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Processor:add_instance|Stage1:st1|PC_Incrementer:PC_inc|ADD_4BIT:Adder1" ;
++---------+-------+----------+------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                ;
++---------+-------+----------+------------------------------------------------------------------------+
+; b[3..1] ; Input ; Info     ; Stuck at GND                                                           ;
+; b[0]    ; Input ; Info     ; Stuck at VCC                                                           ;
+; cin     ; Input ; Info     ; Stuck at GND                                                           ;
++---------+-------+----------+------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 4                           ;
+; cycloneiii_lcell_comb ; 1                           ;
+;     normal            ; 1                           ;
+;         0 data inputs ; 1                           ;
+;                       ;                             ;
+; Max LUT depth         ; 0.00                        ;
+; Average LUT depth     ; 0.00                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Sat May 06 22:11:14 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off IITB-RISC-23 -c DUT
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file zero_appender_imm.vhd
+    Info (12022): Found design unit 1: zero_Appender_Imm-Struct File: D:/IITB-RISC-23/zero_appender_Imm.vhd Line: 11
+    Info (12023): Found entity 1: zero_Appender_Imm File: D:/IITB-RISC-23/zero_appender_Imm.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file zero_appender_carry.vhd
+    Info (12022): Found design unit 1: zero_Appender_Carry-Struct File: D:/IITB-RISC-23/zero_appender_Carry.vhd Line: 11
+    Info (12023): Found entity 1: zero_Appender_Carry File: D:/IITB-RISC-23/zero_appender_Carry.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file xor_16.vhd
+    Info (12022): Found design unit 1: XOR_16-Struct File: D:/IITB-RISC-23/XOR_16.vhd Line: 11
+    Info (12023): Found entity 1: XOR_16 File: D:/IITB-RISC-23/XOR_16.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file testbench.vhd
+    Info (12022): Found design unit 1: Testbench-Behave File: D:/IITB-RISC-23/Testbench.vhd Line: 9
+    Info (12023): Found entity 1: Testbench File: D:/IITB-RISC-23/Testbench.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file subtract.vhd
+    Info (12022): Found design unit 1: SUBTRACT-Struct File: D:/IITB-RISC-23/SUBTRACT.vhd Line: 11
+    Info (12023): Found entity 1: SUBTRACT File: D:/IITB-RISC-23/SUBTRACT.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file stage6.vhd
+    Info (12022): Found design unit 1: stage6-Struct File: D:/IITB-RISC-23/Stage6.vhd Line: 27
+    Info (12023): Found entity 1: stage6 File: D:/IITB-RISC-23/Stage6.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file stage5.vhd
+    Info (12022): Found design unit 1: stage5-Struct File: D:/IITB-RISC-23/Stage5.vhd Line: 19
+    Info (12023): Found entity 1: stage5 File: D:/IITB-RISC-23/Stage5.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file stage4.vhd
+    Info (12022): Found design unit 1: stage4-struct File: D:/IITB-RISC-23/Stage4.vhd Line: 31
+    Info (12023): Found entity 1: stage4 File: D:/IITB-RISC-23/Stage4.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file stage3.vhd
+    Info (12022): Found design unit 1: stage3-Struct File: D:/IITB-RISC-23/stage3.vhd Line: 29
+    Info (12023): Found entity 1: stage3 File: D:/IITB-RISC-23/stage3.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file stage2.vhd
+    Info (12022): Found design unit 1: stage2-control_stage File: D:/IITB-RISC-23/Stage2.vhd Line: 18
+    Info (12023): Found entity 1: stage2 File: D:/IITB-RISC-23/Stage2.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file stage1.vhd
+    Info (12022): Found design unit 1: Stage1-Struct File: D:/IITB-RISC-23/Stage1.vhd Line: 22
+    Info (12023): Found entity 1: Stage1 File: D:/IITB-RISC-23/Stage1.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file se9.vhd
+    Info (12022): Found design unit 1: SE9-extend_BITs File: D:/IITB-RISC-23/SE9.vhd Line: 11
+    Info (12023): Found entity 1: SE9 File: D:/IITB-RISC-23/SE9.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file se6.vhd
+    Info (12022): Found design unit 1: SE6-extend_BITs File: D:/IITB-RISC-23/SE6.vhd Line: 11
+    Info (12023): Found entity 1: SE6 File: D:/IITB-RISC-23/SE6.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file register_file.vhd
+    Info (12022): Found design unit 1: reg_file-Struct File: D:/IITB-RISC-23/Register_file.vhd Line: 21
+    Info (12023): Found entity 1: reg_file File: D:/IITB-RISC-23/Register_file.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file reg_with_reset.vhd
+    Info (12022): Found design unit 1: reg_with_reset-arch_Reg File: D:/IITB-RISC-23/reg_with_reset.vhd Line: 16
+    Info (12023): Found entity 1: reg_with_reset File: D:/IITB-RISC-23/reg_with_reset.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file processor.vhd
+    Info (12022): Found design unit 1: Processor-Struct File: D:/IITB-RISC-23/Processor.vhd Line: 14
+    Info (12023): Found entity 1: Processor File: D:/IITB-RISC-23/Processor.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file priority_encoder.vhd
+    Info (12022): Found design unit 1: PriorityEncoder-Struct File: D:/IITB-RISC-23/Priority_encoder.vhd Line: 16
+    Info (12023): Found entity 1: PriorityEncoder File: D:/IITB-RISC-23/Priority_encoder.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file pipelinereg5.vhd
+    Info (12022): Found design unit 1: pipelineReg5-arch_Reg File: D:/IITB-RISC-23/pipelineReg5.vhd Line: 14
+    Info (12023): Found entity 1: pipelineReg5 File: D:/IITB-RISC-23/pipelineReg5.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file pipelinereg4.vhd
+    Info (12022): Found design unit 1: pipelineReg4-arch_Reg File: D:/IITB-RISC-23/pipelineReg4.vhd Line: 24
+    Info (12023): Found entity 1: pipelineReg4 File: D:/IITB-RISC-23/pipelineReg4.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file pipelinereg3.vhd
+    Info (12022): Found design unit 1: pipelineReg3-arch_Reg File: D:/IITB-RISC-23/pipelineReg3.vhd Line: 19
+    Info (12023): Found entity 1: pipelineReg3 File: D:/IITB-RISC-23/pipelineReg3.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file pipelinereg2.vhd
+    Info (12022): Found design unit 1: pipelineReg2-arch_Reg File: D:/IITB-RISC-23/pipelineReg2.vhd Line: 17
+    Info (12023): Found entity 1: pipelineReg2 File: D:/IITB-RISC-23/pipelineReg2.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file pipelinereg1.vhd
+    Info (12022): Found design unit 1: pipelineReg1-arch_Reg File: D:/IITB-RISC-23/pipelineReg1.vhd Line: 14
+    Info (12023): Found entity 1: pipelineReg1 File: D:/IITB-RISC-23/pipelineReg1.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file pc_incrementer.vhd
+    Info (12022): Found design unit 1: PC_Incrementer-Struct File: D:/IITB-RISC-23/PC_Incrementer.vhd Line: 9
+    Info (12023): Found entity 1: PC_Incrementer File: D:/IITB-RISC-23/PC_Incrementer.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file nor_zbit.vhd
+    Info (12022): Found design unit 1: NOR_ZBIT-Struct File: D:/IITB-RISC-23/NOR_ZBIT.vhd Line: 12
+    Info (12023): Found entity 1: NOR_ZBIT File: D:/IITB-RISC-23/NOR_ZBIT.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file nand_16.vhd
+    Info (12022): Found design unit 1: NAND_16-Struct File: D:/IITB-RISC-23/NAND_16.vhd Line: 12
+    Info (12023): Found entity 1: NAND_16 File: D:/IITB-RISC-23/NAND_16.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mux16to1.vhd
+    Info (12022): Found design unit 1: mux16to1-Struct File: D:/IITB-RISC-23/mux16to1.vhd Line: 13
+    Info (12023): Found entity 1: mux16to1 File: D:/IITB-RISC-23/mux16to1.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mux4to1_for_ble.vhd
+    Info (12022): Found design unit 1: mux4to1_for_BLE-archmux File: D:/IITB-RISC-23/mux4to1_for_BLE.vhd Line: 13
+    Info (12023): Found entity 1: mux4to1_for_BLE File: D:/IITB-RISC-23/mux4to1_for_BLE.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file mux4to1_3bits.vhd
+    Info (12022): Found design unit 1: mux4to1_3bits-arch_mux4to1_3bits File: D:/IITB-RISC-23/mux4to1_3bits.vhd Line: 17
+    Info (12023): Found entity 1: mux4to1_3bits File: D:/IITB-RISC-23/mux4to1_3bits.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file mux4to1.vhd
+    Info (12022): Found design unit 1: mux4to1-arch_mux4to1 File: D:/IITB-RISC-23/mux4to1.vhd Line: 14
+    Info (12023): Found entity 1: mux4to1 File: D:/IITB-RISC-23/mux4to1.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mux2x1_16.vhd
+    Info (12022): Found design unit 1: mux2to1-arch_mux2to1 File: D:/IITB-RISC-23/mux2x1_16.vhd Line: 14
+    Info (12023): Found entity 1: mux2to1 File: D:/IITB-RISC-23/mux2x1_16.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mux2to1_16bits.vhd
+    Info (12022): Found design unit 1: mux2to1_16bits-arch_mux2to1_16bits File: D:/IITB-RISC-23/mux2to1_16bits.vhd Line: 14
+    Info (12023): Found entity 1: mux2to1_16bits File: D:/IITB-RISC-23/mux2to1_16bits.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mux2to1_3bits.vhd
+    Info (12022): Found design unit 1: mux2to1_3bits-arch_mux2to1_3bits File: D:/IITB-RISC-23/mux2to1_3bits.vhd Line: 14
+    Info (12023): Found entity 1: mux2to1_3bits File: D:/IITB-RISC-23/mux2to1_3bits.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mux_8to1.vhd
+    Info (12022): Found design unit 1: MUX_8To1-Struct File: D:/IITB-RISC-23/MUX_8To1.vhd Line: 14
+    Info (12023): Found entity 1: MUX_8To1 File: D:/IITB-RISC-23/MUX_8To1.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mux_2to1_8.vhd
+    Info (12022): Found design unit 1: mux_2to1_8-arch_mux2to1 File: D:/IITB-RISC-23/mux_2to1_8.vhd Line: 14
+    Info (12023): Found entity 1: mux_2to1_8 File: D:/IITB-RISC-23/mux_2to1_8.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file instructionmemory.vhd
+    Info (12022): Found design unit 1: InstrMemory-Struct File: D:/IITB-RISC-23/InstructionMemory.vhd Line: 14
+    Info (12023): Found entity 1: InstrMemory File: D:/IITB-RISC-23/InstructionMemory.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file hazard_unit.vhd
+    Info (12022): Found design unit 1: hazard_unit-Behavourial File: D:/IITB-RISC-23/hazard_unit.vhd Line: 13
+    Info (12023): Found entity 1: hazard_unit File: D:/IITB-RISC-23/hazard_unit.vhd Line: 4
+Info (12021): Found 17 design units, including 8 entities, in source file gates.vhd
+    Info (12022): Found design unit 1: Gates File: D:/IITB-RISC-23/Gates.vhd Line: 7
+    Info (12022): Found design unit 2: INVERTER-Equations File: D:/IITB-RISC-23/Gates.vhd Line: 49
+    Info (12022): Found design unit 3: AND_2-Equations File: D:/IITB-RISC-23/Gates.vhd Line: 61
+    Info (12022): Found design unit 4: NAND_2-Equations File: D:/IITB-RISC-23/Gates.vhd Line: 72
+    Info (12022): Found design unit 5: OR_2-Equations File: D:/IITB-RISC-23/Gates.vhd Line: 83
+    Info (12022): Found design unit 6: NOR_2-Equations File: D:/IITB-RISC-23/Gates.vhd Line: 94
+    Info (12022): Found design unit 7: XOR_2-Equations File: D:/IITB-RISC-23/Gates.vhd Line: 106
+    Info (12022): Found design unit 8: XNOR_2-Equations File: D:/IITB-RISC-23/Gates.vhd Line: 117
+    Info (12022): Found design unit 9: HALF_ADDER-Equations File: D:/IITB-RISC-23/Gates.vhd Line: 128
+    Info (12023): Found entity 1: INVERTER File: D:/IITB-RISC-23/Gates.vhd Line: 45
+    Info (12023): Found entity 2: AND_2 File: D:/IITB-RISC-23/Gates.vhd Line: 57
+    Info (12023): Found entity 3: NAND_2 File: D:/IITB-RISC-23/Gates.vhd Line: 68
+    Info (12023): Found entity 4: OR_2 File: D:/IITB-RISC-23/Gates.vhd Line: 79
+    Info (12023): Found entity 5: NOR_2 File: D:/IITB-RISC-23/Gates.vhd Line: 90
+    Info (12023): Found entity 6: XOR_2 File: D:/IITB-RISC-23/Gates.vhd Line: 102
+    Info (12023): Found entity 7: XNOR_2 File: D:/IITB-RISC-23/Gates.vhd Line: 113
+    Info (12023): Found entity 8: HALF_ADDER File: D:/IITB-RISC-23/Gates.vhd Line: 124
+Info (12021): Found 2 design units, including 1 entities, in source file dut.vhd
+    Info (12022): Found design unit 1: DUT-DutWrap File: D:/IITB-RISC-23/DUT.vhd Line: 9
+    Info (12023): Found entity 1: DUT File: D:/IITB-RISC-23/DUT.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file demux_8to1.vhd
+    Info (12022): Found design unit 1: demux_8to1-demuxed File: D:/IITB-RISC-23/demux_8to1.vhd Line: 19
+    Info (12023): Found entity 1: demux_8to1 File: D:/IITB-RISC-23/demux_8to1.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file data_memory.vhd
+    Info (12022): Found design unit 1: DataMemory-data File: D:/IITB-RISC-23/data_memory.vhd Line: 18
+    Info (12023): Found entity 1: DataMemory File: D:/IITB-RISC-23/data_memory.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file controller.vhd
+    Info (12022): Found design unit 1: controller_logic-controller File: D:/IITB-RISC-23/controller.vhd Line: 45
+    Info (12023): Found entity 1: controller_logic File: D:/IITB-RISC-23/controller.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file complementer.vhd
+    Info (12022): Found design unit 1: Complementer-Struct File: D:/IITB-RISC-23/complementer.vhd Line: 11
+    Info (12023): Found entity 1: Complementer File: D:/IITB-RISC-23/complementer.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file bitregister.vhd
+    Info (12022): Found design unit 1: bitReg-arch_Reg File: D:/IITB-RISC-23/bitRegister.vhd Line: 13
+    Info (12023): Found entity 1: bitReg File: D:/IITB-RISC-23/bitRegister.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
+    Info (12022): Found design unit 1: ALU-Struct File: D:/IITB-RISC-23/ALU.vhd Line: 13
+    Info (12023): Found entity 1: ALU File: D:/IITB-RISC-23/ALU.vhd Line: 6
+Info (12021): Found 4 design units, including 2 entities, in source file add_4bit.vhd
+    Info (12022): Found design unit 1: FULL_ADDER1-Struct File: D:/IITB-RISC-23/ADD_4BIT.vhd Line: 10
+    Info (12022): Found design unit 2: ADD_4BIT-Struct File: D:/IITB-RISC-23/ADD_4BIT.vhd Line: 39
+    Info (12023): Found entity 1: FULL_ADDER1 File: D:/IITB-RISC-23/ADD_4BIT.vhd Line: 6
+    Info (12023): Found entity 2: ADD_4BIT File: D:/IITB-RISC-23/ADD_4BIT.vhd Line: 34
+Info (12021): Found 2 design units, including 1 entities, in source file add.vhd
+    Info (12022): Found design unit 1: ADD-Struct File: D:/IITB-RISC-23/ADD.vhd Line: 9
+    Info (12023): Found entity 1: ADD File: D:/IITB-RISC-23/ADD.vhd Line: 4
+Info (12127): Elaborating entity "DUT" for the top level hierarchy
+Info (12128): Elaborating entity "Processor" for hierarchy "Processor:add_instance" File: D:/IITB-RISC-23/DUT.vhd Line: 16
+Warning (10541): VHDL Signal Declaration warning at Processor.vhd(10): used implicit default value for signal "Carry" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/IITB-RISC-23/Processor.vhd Line: 10
+Warning (10541): VHDL Signal Declaration warning at Processor.vhd(10): used implicit default value for signal "Zero" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/IITB-RISC-23/Processor.vhd Line: 10
+Info (12128): Elaborating entity "Stage1" for hierarchy "Processor:add_instance|Stage1:st1" File: D:/IITB-RISC-23/Processor.vhd Line: 333
+Info (12128): Elaborating entity "mux2to1" for hierarchy "Processor:add_instance|Stage1:st1|mux2to1:mux1" File: D:/IITB-RISC-23/Stage1.vhd Line: 58
+Info (12128): Elaborating entity "PC_Incrementer" for hierarchy "Processor:add_instance|Stage1:st1|PC_Incrementer:PC_inc" File: D:/IITB-RISC-23/Stage1.vhd Line: 60
+Warning (10036): Verilog HDL or VHDL warning at PC_Incrementer.vhd(17): object "C_out" assigned a value but never read File: D:/IITB-RISC-23/PC_Incrementer.vhd Line: 17
+Info (12128): Elaborating entity "ADD_4BIT" for hierarchy "Processor:add_instance|Stage1:st1|PC_Incrementer:PC_inc|ADD_4BIT:Adder1" File: D:/IITB-RISC-23/PC_Incrementer.vhd Line: 21
+Info (12128): Elaborating entity "FULL_ADDER1" for hierarchy "Processor:add_instance|Stage1:st1|PC_Incrementer:PC_inc|ADD_4BIT:Adder1|FULL_ADDER1:FA1" File: D:/IITB-RISC-23/ADD_4BIT.vhd Line: 49
+Info (12128): Elaborating entity "XOR_2" for hierarchy "Processor:add_instance|Stage1:st1|PC_Incrementer:PC_inc|ADD_4BIT:Adder1|FULL_ADDER1:FA1|XOR_2:X1" File: D:/IITB-RISC-23/ADD_4BIT.vhd Line: 15
+Info (12128): Elaborating entity "AND_2" for hierarchy "Processor:add_instance|Stage1:st1|PC_Incrementer:PC_inc|ADD_4BIT:Adder1|FULL_ADDER1:FA1|AND_2:A1" File: D:/IITB-RISC-23/ADD_4BIT.vhd Line: 19
+Info (12128): Elaborating entity "OR_2" for hierarchy "Processor:add_instance|Stage1:st1|PC_Incrementer:PC_inc|ADD_4BIT:Adder1|FULL_ADDER1:FA1|OR_2:O1" File: D:/IITB-RISC-23/ADD_4BIT.vhd Line: 23
+Info (12128): Elaborating entity "InstrMemory" for hierarchy "Processor:add_instance|Stage1:st1|InstrMemory:inst1" File: D:/IITB-RISC-23/Stage1.vhd Line: 62
+Info (12128): Elaborating entity "reg_with_reset" for hierarchy "Processor:add_instance|Stage1:st1|reg_with_reset:PC_d" File: D:/IITB-RISC-23/Stage1.vhd Line: 64
+Info (12128): Elaborating entity "mux16to1" for hierarchy "Processor:add_instance|Stage1:st1|mux16to1:mux2" File: D:/IITB-RISC-23/Stage1.vhd Line: 66
+Info (12128): Elaborating entity "pipelineReg1" for hierarchy "Processor:add_instance|pipelineReg1:pipReg1" File: D:/IITB-RISC-23/Processor.vhd Line: 337
+Info (12128): Elaborating entity "stage2" for hierarchy "Processor:add_instance|stage2:st2" File: D:/IITB-RISC-23/Processor.vhd Line: 341
+Info (12128): Elaborating entity "controller_logic" for hierarchy "Processor:add_instance|stage2:st2|controller_logic:Controller" File: D:/IITB-RISC-23/Stage2.vhd Line: 55
+Info (12128): Elaborating entity "mux_2to1_8" for hierarchy "Processor:add_instance|stage2:st2|mux_2to1_8:MUX" File: D:/IITB-RISC-23/Stage2.vhd Line: 58
+Info (12128): Elaborating entity "PriorityEncoder" for hierarchy "Processor:add_instance|stage2:st2|PriorityEncoder:PEN" File: D:/IITB-RISC-23/Stage2.vhd Line: 61
+Info (12128): Elaborating entity "pipelineReg2" for hierarchy "Processor:add_instance|pipelineReg2:pipReg2" File: D:/IITB-RISC-23/Processor.vhd Line: 344
+Info (12128): Elaborating entity "stage3" for hierarchy "Processor:add_instance|stage3:st3" File: D:/IITB-RISC-23/Processor.vhd Line: 349
+Info (12128): Elaborating entity "mux2to1_16bits" for hierarchy "Processor:add_instance|stage3:st3|mux2to1_16bits:mux1" File: D:/IITB-RISC-23/stage3.vhd Line: 76
+Info (12128): Elaborating entity "mux4to1_3bits" for hierarchy "Processor:add_instance|stage3:st3|mux4to1_3bits:mux2" File: D:/IITB-RISC-23/stage3.vhd Line: 77
+Info (12128): Elaborating entity "mux2to1_3bits" for hierarchy "Processor:add_instance|stage3:st3|mux2to1_3bits:mux3" File: D:/IITB-RISC-23/stage3.vhd Line: 78
+Info (12128): Elaborating entity "reg_file" for hierarchy "Processor:add_instance|stage3:st3|reg_file:RF" File: D:/IITB-RISC-23/stage3.vhd Line: 82
+Info (12128): Elaborating entity "pipelineReg3" for hierarchy "Processor:add_instance|pipelineReg3:pipReg3" File: D:/IITB-RISC-23/Processor.vhd Line: 355
+Info (12128): Elaborating entity "stage4" for hierarchy "Processor:add_instance|stage4:st4" File: D:/IITB-RISC-23/Processor.vhd Line: 360
+Info (12128): Elaborating entity "Complementer" for hierarchy "Processor:add_instance|stage4:st4|Complementer:comp" File: D:/IITB-RISC-23/Stage4.vhd Line: 173
+Warning (10540): VHDL Signal Declaration warning at complementer.vhd(13): used explicit default value for signal "allone" because signal was never assigned a value File: D:/IITB-RISC-23/complementer.vhd Line: 13
+Info (12128): Elaborating entity "zero_Appender_Carry" for hierarchy "Processor:add_instance|stage4:st4|zero_Appender_Carry:carry_append" File: D:/IITB-RISC-23/Stage4.vhd Line: 175
+Info (12128): Elaborating entity "SE6" for hierarchy "Processor:add_instance|stage4:st4|SE6:SE_6" File: D:/IITB-RISC-23/Stage4.vhd Line: 178
+Info (12128): Elaborating entity "SE9" for hierarchy "Processor:add_instance|stage4:st4|SE9:SE_9" File: D:/IITB-RISC-23/Stage4.vhd Line: 179
+Info (12128): Elaborating entity "bitReg" for hierarchy "Processor:add_instance|stage4:st4|bitReg:bit_C_reg" File: D:/IITB-RISC-23/Stage4.vhd Line: 181
+Info (12128): Elaborating entity "MUX_8To1" for hierarchy "Processor:add_instance|stage4:st4|MUX_8To1:mux_5" File: D:/IITB-RISC-23/Stage4.vhd Line: 184
+Info (12128): Elaborating entity "mux4to1" for hierarchy "Processor:add_instance|stage4:st4|mux4to1:mux_7" File: D:/IITB-RISC-23/Stage4.vhd Line: 193
+Info (12128): Elaborating entity "ADD" for hierarchy "Processor:add_instance|stage4:st4|ADD:ADDER2" File: D:/IITB-RISC-23/Stage4.vhd Line: 204
+Info (12128): Elaborating entity "ALU" for hierarchy "Processor:add_instance|stage4:st4|ALU:ALU3" File: D:/IITB-RISC-23/Stage4.vhd Line: 208
+Info (12128): Elaborating entity "NAND_16" for hierarchy "Processor:add_instance|stage4:st4|ALU:ALU3|NAND_16:NAND1" File: D:/IITB-RISC-23/ALU.vhd Line: 48
+Info (12128): Elaborating entity "XOR_16" for hierarchy "Processor:add_instance|stage4:st4|ALU:ALU3|XOR_16:XOR1" File: D:/IITB-RISC-23/ALU.vhd Line: 50
+Info (12128): Elaborating entity "SUBTRACT" for hierarchy "Processor:add_instance|stage4:st4|ALU:ALU3|SUBTRACT:Sub1" File: D:/IITB-RISC-23/ALU.vhd Line: 52
+Info (12128): Elaborating entity "NOR_ZBIT" for hierarchy "Processor:add_instance|stage4:st4|ALU:ALU3|NOR_ZBIT:N1" File: D:/IITB-RISC-23/ALU.vhd Line: 74
+Info (12128): Elaborating entity "mux4to1_for_BLE" for hierarchy "Processor:add_instance|stage4:st4|mux4to1_for_BLE:mux_9" File: D:/IITB-RISC-23/Stage4.vhd Line: 213
+Info (12128): Elaborating entity "zero_Appender_Imm" for hierarchy "Processor:add_instance|stage4:st4|zero_Appender_Imm:zapc" File: D:/IITB-RISC-23/Stage4.vhd Line: 215
+Info (12128): Elaborating entity "hazard_unit" for hierarchy "Processor:add_instance|stage4:st4|hazard_unit:hazard" File: D:/IITB-RISC-23/Stage4.vhd Line: 224
+Info (12128): Elaborating entity "pipelineReg4" for hierarchy "Processor:add_instance|pipelineReg4:pipReg4" File: D:/IITB-RISC-23/Processor.vhd Line: 367
+Info (12128): Elaborating entity "stage5" for hierarchy "Processor:add_instance|stage5:st5" File: D:/IITB-RISC-23/Processor.vhd Line: 374
+Info (12128): Elaborating entity "DataMemory" for hierarchy "Processor:add_instance|stage5:st5|DataMemory:datamem" File: D:/IITB-RISC-23/Stage5.vhd Line: 49
+Info (12128): Elaborating entity "pipelineReg5" for hierarchy "Processor:add_instance|pipelineReg5:pipReg5" File: D:/IITB-RISC-23/Processor.vhd Line: 378
+Info (12128): Elaborating entity "stage6" for hierarchy "Processor:add_instance|stage6:st6" File: D:/IITB-RISC-23/Processor.vhd Line: 382
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "output_vector[0]" is stuck at GND File: D:/IITB-RISC-23/DUT.vhd Line: 6
+    Warning (13410): Pin "output_vector[1]" is stuck at GND File: D:/IITB-RISC-23/DUT.vhd Line: 6
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "input_vector[0]" File: D:/IITB-RISC-23/DUT.vhd Line: 5
+    Warning (15610): No output dependent on input pin "input_vector[1]" File: D:/IITB-RISC-23/DUT.vhd Line: 5
+Info (21057): Implemented 4 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 2 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4805 megabytes
+    Info: Processing ended: Sat May 06 22:11:22 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:09
+
+

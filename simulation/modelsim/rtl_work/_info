@@ -1,0 +1,2226 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/IITB-RISC-23/simulation/modelsim
+Eadd
+Z1 w1683274427
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 42
+R0
+Z4 8D:/IITB-RISC-23/ADD.vhd
+Z5 FD:/IITB-RISC-23/ADD.vhd
+l0
+L4 1
+VX7GX<^W?DfLN4]jzHDP_z2
+!s100 ZR2^GQZBXQ[PIWR`FYJzJ0
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1683391309
+!i10b 1
+Z8 !s108 1683391309.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/ADD.vhd|
+Z10 !s107 D:/IITB-RISC-23/ADD.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Astruct
+R2
+R3
+DEx4 work 3 add 0 22 X7GX<^W?DfLN4]jzHDP_z2
+!i122 42
+l19
+L9 24
+V;12QFZnhD>YUNNMAEz9:Y0
+!s100 a9Gc@bW9@J62]O9Wh3M@:2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eadd_4bit
+R1
+Z13 DPx4 work 5 gates 0 22 NcY4A7TbR^WLRT`2c:]N[1
+R2
+R3
+!i122 43
+R0
+Z14 8D:/IITB-RISC-23/ADD_4BIT.vhd
+Z15 FD:/IITB-RISC-23/ADD_4BIT.vhd
+l0
+L34 1
+VQ0ikGESm?=z=0aaSGdhSi0
+!s100 P4Ve:1zfi2_Ba9Njc[L3^1
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/ADD_4BIT.vhd|
+Z17 !s107 D:/IITB-RISC-23/ADD_4BIT.vhd|
+!i113 1
+R11
+R12
+Astruct
+R13
+R2
+R3
+DEx4 work 8 add_4bit 0 22 Q0ikGESm?=z=0aaSGdhSi0
+!i122 43
+l47
+L39 20
+VeW>96Q?8n]03]E;PYNNbh3
+!s100 >zzj:Nc[S@m0h>Kc1Cbe63
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Ealu
+R1
+R2
+R3
+!i122 41
+R0
+Z18 8D:/IITB-RISC-23/ALU.vhd
+Z19 FD:/IITB-RISC-23/ALU.vhd
+l0
+L6 1
+VHWC::L5S8M6n80E=:QcIc0
+!s100 d?4O0z=eHz0LPcY7UPWcO1
+R6
+31
+R7
+!i10b 1
+R8
+Z20 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/ALU.vhd|
+Z21 !s107 D:/IITB-RISC-23/ALU.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 3 alu 0 22 HWC::L5S8M6n80E=:QcIc0
+!i122 41
+l44
+L13 65
+VWfk9`T=BA:=8RHo`^gY8J0
+!s100 z^hVFbF8o9Xe>bPE8TG?o2
+R6
+31
+R7
+!i10b 1
+R8
+R20
+R21
+!i113 1
+R11
+R12
+Eand_2
+R1
+R2
+R3
+!i122 35
+R0
+Z22 8D:/IITB-RISC-23/Gates.vhd
+Z23 FD:/IITB-RISC-23/Gates.vhd
+l0
+L57 1
+VW2QdRhzH^gh`1Z4bifmBf3
+!s100 <1nD4fLK5FZ?LMSb4GDe>3
+R6
+31
+R7
+!i10b 1
+Z24 !s108 1683391308.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/Gates.vhd|
+Z26 !s107 D:/IITB-RISC-23/Gates.vhd|
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 and_2 0 22 W2QdRhzH^gh`1Z4bifmBf3
+!i122 35
+l62
+L61 4
+VnDT8d]LGAGAW:`<`mSSSg3
+!s100 HhM:H^IAkB>a2X9?`<@_k0
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Ebitreg
+Z27 w1683388191
+R2
+R3
+!i122 40
+R0
+Z28 8D:/IITB-RISC-23/bitRegister.vhd
+Z29 FD:/IITB-RISC-23/bitRegister.vhd
+l0
+L6 1
+VNc@kz7mIe:42Q?LTk@F6i1
+!s100 VS>3Sj18T2Rn^R@V8<ECR3
+R6
+31
+R7
+!i10b 1
+R8
+Z30 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/bitRegister.vhd|
+Z31 !s107 D:/IITB-RISC-23/bitRegister.vhd|
+!i113 1
+R11
+R12
+Aarch_reg
+R2
+R3
+DEx4 work 6 bitreg 0 22 Nc@kz7mIe:42Q?LTk@F6i1
+!i122 40
+l15
+L13 17
+VbE3<59EPlM6SD7A0PP[Y11
+!s100 4I]nbA5]<4:FToHiPHzV`3
+R6
+31
+R7
+!i10b 1
+R8
+R30
+R31
+!i113 1
+R11
+R12
+Ecomplementer
+R27
+R2
+R3
+!i122 39
+R0
+Z32 8D:/IITB-RISC-23/complementer.vhd
+Z33 FD:/IITB-RISC-23/complementer.vhd
+l0
+L4 1
+V:B>:PY_VO72fgO5zY4;0R1
+!s100 PYG^k]NRMaWeJPJMHXk;a0
+R6
+31
+R7
+!i10b 1
+R8
+Z34 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/complementer.vhd|
+Z35 !s107 D:/IITB-RISC-23/complementer.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 12 complementer 0 22 :B>:PY_VO72fgO5zY4;0R1
+!i122 39
+l16
+L11 11
+VXe>T]k]MEGGZa;Wz:nT583
+!s100 4PCV<R6_LNbkj5GUZ[W8h0
+R6
+31
+R7
+!i10b 1
+R8
+R34
+R35
+!i113 1
+R11
+R12
+Econtroller_logic
+Z36 w1683388227
+Z37 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R2
+R3
+!i122 38
+R0
+Z38 8D:/IITB-RISC-23/controller.vhd
+Z39 FD:/IITB-RISC-23/controller.vhd
+l0
+L7 1
+V2lnalX<o^gH[V:nN<DP5:0
+!s100 ?d3ZNdf8UL3i5>N];n:]m1
+R6
+31
+R7
+!i10b 1
+R8
+Z40 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/controller.vhd|
+Z41 !s107 D:/IITB-RISC-23/controller.vhd|
+!i113 1
+R11
+R12
+Acontroller
+R37
+R2
+R3
+DEx4 work 16 controller_logic 0 22 2lnalX<o^gH[V:nN<DP5:0
+!i122 38
+l47
+L45 394
+VagI>R;]W[BUdf8AVH7O_12
+!s100 lTQ<zFRl<^21?IfgVKdnM3
+R6
+31
+R7
+!i10b 1
+R8
+R40
+R41
+!i113 1
+R11
+R12
+Edatamemory
+Z42 w1683388190
+R37
+R2
+R3
+!i122 37
+R0
+Z43 8D:/IITB-RISC-23/data_memory.vhd
+Z44 FD:/IITB-RISC-23/data_memory.vhd
+l0
+L7 1
+V`3X]9ge5A5YE^f[UL]g3c0
+!s100 AHid1lz@ICI0ofDI:i^i[1
+R6
+31
+R7
+!i10b 1
+R8
+Z45 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/data_memory.vhd|
+Z46 !s107 D:/IITB-RISC-23/data_memory.vhd|
+!i113 1
+R11
+R12
+Adata
+R37
+R2
+R3
+DEx4 work 10 datamemory 0 22 `3X]9ge5A5YE^f[UL]g3c0
+!i122 37
+l25
+L18 29
+V?Ao^Afga:?n2fDBaX@GnS2
+!s100 PZkJaCfU1o<U]Q44OKoU`1
+R6
+31
+R7
+!i10b 1
+R8
+R45
+R46
+!i113 1
+R11
+R12
+Edut
+Z47 w1683304977
+R2
+R3
+!i122 36
+R0
+Z48 8D:/IITB-RISC-23/DUT.vhd
+Z49 FD:/IITB-RISC-23/DUT.vhd
+l0
+L4 1
+V2d;B3U1DFXXR_khk2IlC11
+!s100 aO_DdVeaaCjk3??TLL7^Y3
+R6
+31
+R7
+!i10b 1
+R8
+Z50 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/DUT.vhd|
+Z51 !s107 D:/IITB-RISC-23/DUT.vhd|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 2d;B3U1DFXXR_khk2IlC11
+!i122 36
+l14
+L9 15
+V7fY_Tz_nA6PWH55A4b`hV1
+!s100 ]VoIQECTY;`hWZHZ?KS8_3
+R6
+31
+R7
+!i10b 1
+R8
+R50
+R51
+!i113 1
+R11
+R12
+Efull_adder1
+R1
+R13
+R2
+R3
+!i122 43
+R0
+R14
+R15
+l0
+L6 1
+V[@`XIQ[Ma[BR0gN?U^K`o1
+!s100 no;d75<9:Te6?lCiP<i?50
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Astruct
+R13
+R2
+R3
+DEx4 work 11 full_adder1 0 22 [@`XIQ[Ma[BR0gN?U^K`o1
+!i122 43
+l14
+L10 17
+V5D<RjNC@`ELmz>^H_AaQL1
+!s100 9iVN^JO`=X28^]M3X:C<>1
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Pgates
+R2
+R3
+!i122 35
+R1
+R0
+R22
+R23
+l0
+L7 1
+VNcY4A7TbR^WLRT`2c:]N[1
+!s100 Dc>f1MeC:9iI_HnNzJ;KT1
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Ehalf_adder
+R1
+R2
+R3
+!i122 35
+R0
+R22
+R23
+l0
+L124 1
+VIZiX8mi96cJ??CnPO^U<C3
+!s100 U;nQkfQTnI7V?fejYIM<g2
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 10 half_adder 0 22 IZiX8mi96cJ??CnPO^U<C3
+!i122 35
+l129
+L128 5
+VCD;QIVbkQ<kd@U[I6UILl1
+!s100 E9g6H`e<YSE@nSQ7XJJ0D0
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Ehazard_unit
+Z52 w1683388179
+R2
+R3
+!i122 34
+R0
+Z53 8D:/IITB-RISC-23/hazard_unit.vhd
+Z54 FD:/IITB-RISC-23/hazard_unit.vhd
+l0
+L4 1
+VCk<6m9[g2]9Q=oRFcDj1[2
+!s100 7jiloZn3A>PWdej0eP@h42
+R6
+31
+Z55 !s110 1683391308
+!i10b 1
+R24
+Z56 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/hazard_unit.vhd|
+Z57 !s107 D:/IITB-RISC-23/hazard_unit.vhd|
+!i113 1
+R11
+R12
+Abehavourial
+R2
+R3
+DEx4 work 11 hazard_unit 0 22 Ck<6m9[g2]9Q=oRFcDj1[2
+!i122 34
+l15
+L13 306
+VG?MXVJgEBf1?ohz6]1mH83
+!s100 Xm7:<R839jl[XeJDAQna=3
+R6
+31
+R55
+!i10b 1
+R24
+R56
+R57
+!i113 1
+R11
+R12
+Einstrmemory
+Z58 w1683389841
+R37
+R2
+R3
+!i122 33
+R0
+Z59 8D:/IITB-RISC-23/InstructionMemory.vhd
+Z60 FD:/IITB-RISC-23/InstructionMemory.vhd
+l0
+L7 1
+VGQ<3UFM17F_EeSm>mz;f12
+!s100 T1dYg42YVUADa?_oO5^G:2
+R6
+31
+R55
+!i10b 1
+R24
+Z61 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/InstructionMemory.vhd|
+Z62 !s107 D:/IITB-RISC-23/InstructionMemory.vhd|
+!i113 1
+R11
+R12
+Astruct
+R37
+R2
+R3
+DEx4 work 11 instrmemory 0 22 GQ<3UFM17F_EeSm>mz;f12
+!i122 33
+l24
+Z63 L14 16
+V8`VM95YkcPgd5I?:YUC=[3
+!s100 JVFl7>GF9GSz[f7G0ek=:3
+R6
+31
+R55
+!i10b 1
+R24
+R61
+R62
+!i113 1
+R11
+R12
+Einverter
+R1
+R2
+R3
+!i122 35
+R0
+R22
+R23
+l0
+L45 1
+V^STYmNzH_F58ZVT>FF?cU2
+!s100 S3joTbdXW90XOjU4i1V^60
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 8 inverter 0 22 ^STYmNzH_F58ZVT>FF?cU2
+!i122 35
+l50
+L49 4
+VY38KWB:XEkc0^3YzW57dj2
+!s100 YS6CiXJRJ@EE5??nNB03h1
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Emux16to1
+Z64 w1683388186
+R2
+R3
+!i122 24
+R0
+Z65 8D:/IITB-RISC-23/mux16to1.vhd
+Z66 FD:/IITB-RISC-23/mux16to1.vhd
+l0
+L6 1
+V6QP4QSClgk7]V:FnR5V;g3
+!s100 `=3>B^7EP`Y?WT_VYbEVb0
+R6
+31
+Z67 !s110 1683391307
+!i10b 1
+Z68 !s108 1683391307.000000
+Z69 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/mux16to1.vhd|
+Z70 !s107 D:/IITB-RISC-23/mux16to1.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 8 mux16to1 0 22 6QP4QSClgk7]V:FnR5V;g3
+!i122 24
+l15
+L13 45
+VIIWULhhC=<3zRGDPOXOHb0
+!s100 nGBA`:lQd=3kSk@5EHkBg0
+R6
+31
+R67
+!i10b 1
+R68
+R69
+R70
+!i113 1
+R11
+R12
+Emux2to1
+Z71 w1683388188
+R2
+R3
+!i122 28
+R0
+Z72 8D:/IITB-RISC-23/mux2x1_16.vhd
+Z73 FD:/IITB-RISC-23/mux2x1_16.vhd
+l0
+L6 1
+VF<_36<k:fLQO?0=zC[_;<3
+!s100 cNhQcDTUe0Xn;:_AL>VP_1
+R6
+31
+R55
+!i10b 1
+R24
+Z74 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/mux2x1_16.vhd|
+Z75 !s107 D:/IITB-RISC-23/mux2x1_16.vhd|
+!i113 1
+R11
+R12
+Aarch_mux2to1
+R2
+R3
+DEx4 work 7 mux2to1 0 22 F<_36<k:fLQO?0=zC[_;<3
+!i122 28
+l16
+Z76 L14 15
+V5Mdgcn;b2S=kY8:MIn:V72
+!s100 XUdRY>G>>FVba`IGY2cY73
+R6
+31
+R55
+!i10b 1
+R24
+R74
+R75
+!i113 1
+R11
+R12
+Emux2to1_16bits
+Z77 w1683388189
+R2
+R3
+!i122 29
+R0
+Z78 8D:/IITB-RISC-23/mux2to1_16bits.vhd
+Z79 FD:/IITB-RISC-23/mux2to1_16bits.vhd
+l0
+L6 1
+V^Wg1RcE59f`K`[AGVIa9P2
+!s100 G@415I@SC^ah?LWARVI_f2
+R6
+31
+R55
+!i10b 1
+R24
+Z80 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/mux2to1_16bits.vhd|
+Z81 !s107 D:/IITB-RISC-23/mux2to1_16bits.vhd|
+!i113 1
+R11
+R12
+Aarch_mux2to1_16bits
+R2
+R3
+DEx4 work 14 mux2to1_16bits 0 22 ^Wg1RcE59f`K`[AGVIa9P2
+!i122 29
+l16
+R76
+VoOk9gk_Ln=^mWa]4[5[SL3
+!s100 efH<ff6<LSo7VC^z=_NiY1
+R6
+31
+R55
+!i10b 1
+R24
+R80
+R81
+!i113 1
+R11
+R12
+Emux2to1_3bits
+R77
+R2
+R3
+!i122 30
+R0
+Z82 8D:/IITB-RISC-23/mux2to1_3bits.vhd
+Z83 FD:/IITB-RISC-23/mux2to1_3bits.vhd
+l0
+L6 1
+VzZ6[kMIcA[>_o7:enh8A^0
+!s100 kg@5fg=O22eKJ_N4oNE[13
+R6
+31
+R55
+!i10b 1
+R24
+Z84 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/mux2to1_3bits.vhd|
+Z85 !s107 D:/IITB-RISC-23/mux2to1_3bits.vhd|
+!i113 1
+R11
+R12
+Aarch_mux2to1_3bits
+R2
+R3
+DEx4 work 13 mux2to1_3bits 0 22 zZ6[kMIcA[>_o7:enh8A^0
+!i122 30
+l16
+R76
+VfbH]3[Y[zPjVGF1?2NkMo3
+!s100 IYo@@TO@V]b]:_P^Kz0Kd0
+R6
+31
+R55
+!i10b 1
+R24
+R84
+R85
+!i113 1
+R11
+R12
+Emux4to1
+R71
+R2
+R3
+!i122 27
+R0
+Z86 8D:/IITB-RISC-23/mux4to1.vhd
+Z87 FD:/IITB-RISC-23/mux4to1.vhd
+l0
+L6 1
+V]G@^LcfbL5=c@Z4SKS=Dg3
+!s100 9[[RiFLzn?>PZ>ScHjW_z3
+R6
+31
+R55
+!i10b 1
+R24
+Z88 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/mux4to1.vhd|
+Z89 !s107 D:/IITB-RISC-23/mux4to1.vhd|
+!i113 1
+R11
+R12
+Aarch_mux4to1
+R2
+R3
+DEx4 work 7 mux4to1 0 22 ]G@^LcfbL5=c@Z4SKS=Dg3
+!i122 27
+l16
+Z90 L14 23
+VSTiUn:n9CdZNh?Fh2oioV1
+!s100 9B?4Eeh_WdzCc:_63H:0h2
+R6
+31
+R55
+!i10b 1
+R24
+R88
+R89
+!i113 1
+R11
+R12
+Emux4to1_3bits
+Z91 w1683388187
+R2
+R3
+!i122 26
+R0
+Z92 8D:/IITB-RISC-23/mux4to1_3bits.vhd
+Z93 FD:/IITB-RISC-23/mux4to1_3bits.vhd
+l0
+L8 1
+VdNg^U[i8[E:LCiOBBze4^3
+!s100 jzR_hSRaEf7FIbQXV<FY53
+R6
+31
+R55
+!i10b 1
+R68
+Z94 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/mux4to1_3bits.vhd|
+Z95 !s107 D:/IITB-RISC-23/mux4to1_3bits.vhd|
+!i113 1
+R11
+R12
+Aarch_mux4to1_3bits
+R2
+R3
+DEx4 work 13 mux4to1_3bits 0 22 dNg^U[i8[E:LCiOBBze4^3
+!i122 26
+l19
+L17 23
+Va8UE=ZC`IBh]zDlIYl@d43
+!s100 L2Dc<:GhH@>7DamC?2^IR2
+R6
+31
+R55
+!i10b 1
+R68
+R94
+R95
+!i113 1
+R11
+R12
+Emux4to1_for_ble
+R91
+R2
+R3
+!i122 25
+R0
+Z96 8D:/IITB-RISC-23/mux4to1_for_BLE.vhd
+Z97 FD:/IITB-RISC-23/mux4to1_for_BLE.vhd
+l0
+L7 1
+VZ6TIiUf][G8J5VSaROh3o0
+!s100 TPc7oQk]G=Z3WlGXYoPeK2
+R6
+31
+R67
+!i10b 1
+R68
+Z98 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/mux4to1_for_BLE.vhd|
+Z99 !s107 D:/IITB-RISC-23/mux4to1_for_BLE.vhd|
+!i113 1
+R11
+R12
+Aarchmux
+R2
+R3
+DEx4 work 15 mux4to1_for_ble 0 22 Z6TIiUf][G8J5VSaROh3o0
+!i122 25
+l14
+L13 19
+V;UoA2?0A009VhPAURO9RY0
+!s100 K[A0VKHk:a>0Pz?=E3=bK2
+R6
+31
+R67
+!i10b 1
+R68
+R98
+R99
+!i113 1
+R11
+R12
+Emux_2to1_8
+Z100 w1683388192
+R2
+R3
+!i122 32
+R0
+Z101 8D:/IITB-RISC-23/mux_2to1_8.vhd
+Z102 FD:/IITB-RISC-23/mux_2to1_8.vhd
+l0
+L6 1
+VOj]]jJ4<mHHd4ZNDKYQUK2
+!s100 4jm32;@[^W^NHQ;I=R3PI1
+R6
+31
+R55
+!i10b 1
+R24
+Z103 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/mux_2to1_8.vhd|
+Z104 !s107 D:/IITB-RISC-23/mux_2to1_8.vhd|
+!i113 1
+R11
+R12
+Aarch_mux2to1
+R2
+R3
+DEx4 work 10 mux_2to1_8 0 22 Oj]]jJ4<mHHd4ZNDKYQUK2
+!i122 32
+l16
+R63
+V`H3MmP?_@CImZKG^Ia@X00
+!s100 =>Cc^j7g0j]=Om0_=mdVV1
+R6
+31
+R55
+!i10b 1
+R24
+R103
+R104
+!i113 1
+R11
+R12
+Emux_8to1
+R42
+R2
+R3
+!i122 31
+R0
+Z105 8D:/IITB-RISC-23/MUX_8To1.vhd
+Z106 FD:/IITB-RISC-23/MUX_8To1.vhd
+l0
+L6 1
+V5cE@X?JXM^XQ?nIX2N;bR0
+!s100 X[SeLA:Nd9MCQckQKLgha1
+R6
+31
+R55
+!i10b 1
+R24
+Z107 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/MUX_8To1.vhd|
+Z108 !s107 D:/IITB-RISC-23/MUX_8To1.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 8 mux_8to1 0 22 5cE@X?JXM^XQ?nIX2N;bR0
+!i122 31
+l16
+L14 29
+V>Y;akb:c5m5i`PSjSDe530
+!s100 2YTb44FeF>9kVZ@1R:4e@2
+R6
+31
+R55
+!i10b 1
+R24
+R107
+R108
+!i113 1
+R11
+R12
+Enand_16
+R64
+R2
+R3
+!i122 23
+R0
+Z109 8D:/IITB-RISC-23/NAND_16.vhd
+Z110 FD:/IITB-RISC-23/NAND_16.vhd
+l0
+L6 1
+VoboOcXhJG1I[ecWBnYaU60
+!s100 7g^P=NG@Lnhhi9mUma0QH0
+R6
+31
+R67
+!i10b 1
+R68
+Z111 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/NAND_16.vhd|
+Z112 !s107 D:/IITB-RISC-23/NAND_16.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 7 nand_16 0 22 oboOcXhJG1I[ecWBnYaU60
+!i122 23
+l14
+Z113 L12 7
+VZancPS5Q_IBhCM>eJ2h6A0
+!s100 az0B?S61?[l^56Wl96]?P3
+R6
+31
+R67
+!i10b 1
+R68
+R111
+R112
+!i113 1
+R11
+R12
+Enand_2
+R1
+R2
+R3
+!i122 35
+R0
+R22
+R23
+l0
+L68 1
+V7Q=aZ>7Mzize[[IfQRQ;`2
+!s100 bRA[c>EJKJWNgCR8ghUC72
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 nand_2 0 22 7Q=aZ>7Mzize[[IfQRQ;`2
+!i122 35
+l73
+L72 4
+V?4CWin9:[TT0?g`jLS0E12
+!s100 I_RPhB=oe82f_Rij[[8JF2
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Enor_2
+R1
+R2
+R3
+!i122 35
+R0
+R22
+R23
+l0
+L90 1
+V3?]TGiHba`>]BD;kULm?^3
+!s100 edYUJ4gTm_U:i]N@4Q=Gg3
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 nor_2 0 22 3?]TGiHba`>]BD;kULm?^3
+!i122 35
+l95
+L94 4
+VNFd;eVo`>0To8@;Oh4diC1
+!s100 ESBi5;Q?X6mLo`Q3JWZ4Q0
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Enor_zbit
+R64
+R2
+R3
+!i122 22
+R0
+Z114 8D:/IITB-RISC-23/NOR_ZBIT.vhd
+Z115 FD:/IITB-RISC-23/NOR_ZBIT.vhd
+l0
+L6 1
+VSRzPUPJDQg<9IXHm4amhn3
+!s100 `MzhS`Y[g4Ph3DQHoTE=>2
+R6
+31
+R67
+!i10b 1
+R68
+Z116 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/NOR_ZBIT.vhd|
+Z117 !s107 D:/IITB-RISC-23/NOR_ZBIT.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 8 nor_zbit 0 22 SRzPUPJDQg<9IXHm4amhn3
+!i122 22
+l14
+R113
+VUXX@1:jI>X_Co[NlzQIn<0
+!s100 =6cl1:I^i08;7K`7kPEZM0
+R6
+31
+R67
+!i10b 1
+R68
+R116
+R117
+!i113 1
+R11
+R12
+Eor_2
+R1
+R2
+R3
+!i122 35
+R0
+R22
+R23
+l0
+L79 1
+V>IC]i[S3fUX<m=i^H@9eA0
+!s100 Be23a45mg=gMiVXM<6Peg0
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 4 or_2 0 22 >IC]i[S3fUX<m=i^H@9eA0
+!i122 35
+l84
+L83 4
+VATF[^b3mj8cbo9?98=TRF0
+!s100 8JcIMFHmJzkaC?5jW]DnS3
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Epc_incrementer
+R1
+R2
+R3
+!i122 21
+R0
+Z118 8D:/IITB-RISC-23/PC_Incrementer.vhd
+Z119 FD:/IITB-RISC-23/PC_Incrementer.vhd
+l0
+L4 1
+VU;RcNLkZEP`1:bKKe6Qkd1
+!s100 d?^SllLZj1`I9EWB65?`O2
+R6
+31
+R67
+!i10b 1
+R68
+Z120 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/PC_Incrementer.vhd|
+Z121 !s107 D:/IITB-RISC-23/PC_Incrementer.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 14 pc_incrementer 0 22 U;RcNLkZEP`1:bKKe6Qkd1
+!i122 21
+l19
+L9 22
+V81RDHZ5COn?`eHFd4;<E=2
+!s100 2aL:bahQj>6ZbPhQaiAVI3
+R6
+31
+R67
+!i10b 1
+R68
+R120
+R121
+!i113 1
+R11
+R12
+Epipelinereg1
+Z122 w1683388185
+R2
+R3
+!i122 20
+R0
+Z123 8D:/IITB-RISC-23/pipelineReg1.vhd
+Z124 FD:/IITB-RISC-23/pipelineReg1.vhd
+l0
+L6 1
+V@SEWAB[LZaKAOLI:7zYUN3
+!s100 zHzbG`n=jUIgCUA<5RGX[3
+R6
+31
+R67
+!i10b 1
+R68
+Z125 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/pipelineReg1.vhd|
+Z126 !s107 D:/IITB-RISC-23/pipelineReg1.vhd|
+!i113 1
+R11
+R12
+Aarch_reg
+R2
+R3
+DEx4 work 12 pipelinereg1 0 22 @SEWAB[LZaKAOLI:7zYUN3
+!i122 20
+l18
+R90
+VlknHN7`Um[`96AhCRV3DV2
+!s100 46[O_:0ViCc9`GhWnFnnW2
+R6
+31
+R67
+!i10b 1
+R68
+R125
+R126
+!i113 1
+R11
+R12
+Epipelinereg2
+R122
+R2
+R3
+!i122 19
+R0
+Z127 8D:/IITB-RISC-23/pipelineReg2.vhd
+Z128 FD:/IITB-RISC-23/pipelineReg2.vhd
+l0
+L6 1
+V`ZJea7TYO4CS^g^WZQ_:l0
+!s100 EYIU;18NNzT;CNDmM7zkb1
+R6
+31
+R67
+!i10b 1
+R68
+Z129 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/pipelineReg2.vhd|
+Z130 !s107 D:/IITB-RISC-23/pipelineReg2.vhd|
+!i113 1
+R11
+R12
+Aarch_reg
+R2
+R3
+DEx4 work 12 pipelinereg2 0 22 `ZJea7TYO4CS^g^WZQ_:l0
+!i122 19
+l21
+L17 26
+VIINJeHc5RBWUDTNbjOG<O2
+!s100 mX<>O06RZV@mK?77`EBmN3
+R6
+31
+R67
+!i10b 1
+R68
+R129
+R130
+!i113 1
+R11
+R12
+Epipelinereg3
+Z131 w1683274428
+R2
+R3
+!i122 18
+R0
+Z132 8D:/IITB-RISC-23/pipelineReg3.vhd
+Z133 FD:/IITB-RISC-23/pipelineReg3.vhd
+l0
+L6 1
+Vjzg6I43011lOG6h;71dA;1
+!s100 f8>i]MT[TFihHNz<YGD7c0
+R6
+31
+R67
+!i10b 1
+R68
+Z134 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/pipelineReg3.vhd|
+Z135 !s107 D:/IITB-RISC-23/pipelineReg3.vhd|
+!i113 1
+R11
+R12
+Aarch_reg
+R2
+R3
+DEx4 work 12 pipelinereg3 0 22 jzg6I43011lOG6h;71dA;1
+!i122 18
+l23
+L19 28
+VBhDBb3F603<3zQoAJEUo:2
+!s100 ?_k[Pdc]GeI;d6>dI>K[;3
+R6
+31
+R67
+!i10b 1
+R68
+R134
+R135
+!i113 1
+R11
+R12
+Epipelinereg4
+R131
+R2
+R3
+!i122 17
+R0
+Z136 8D:/IITB-RISC-23/pipelineReg4.vhd
+Z137 FD:/IITB-RISC-23/pipelineReg4.vhd
+l0
+L6 1
+VWQ[C=HB[WZi;BL[?:ZbXP3
+!s100 IkAiX[Yc@T?ha1di7W`Ui3
+R6
+31
+Z138 !s110 1683391306
+!i10b 1
+Z139 !s108 1683391306.000000
+Z140 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/pipelineReg4.vhd|
+Z141 !s107 D:/IITB-RISC-23/pipelineReg4.vhd|
+!i113 1
+R11
+R12
+Aarch_reg
+R2
+R3
+DEx4 work 12 pipelinereg4 0 22 WQ[C=HB[WZi;BL[?:ZbXP3
+!i122 17
+l28
+L24 33
+VFEkIO7E@7lmO]aQ_D1d]A0
+!s100 e8B56U[g6MXQ5fW301SCC1
+R6
+31
+R138
+!i10b 1
+R139
+R140
+R141
+!i113 1
+R11
+R12
+Epipelinereg5
+Z142 w1683288723
+R2
+R3
+!i122 16
+R0
+Z143 8D:/IITB-RISC-23/pipelineReg5.vhd
+Z144 FD:/IITB-RISC-23/pipelineReg5.vhd
+l0
+L6 1
+V5IkA32kgnJOde?9z6U:jN1
+!s100 @gHFg:oBAMSOfU4jEg0Ec3
+R6
+31
+R138
+!i10b 1
+R139
+Z145 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/pipelineReg5.vhd|
+Z146 !s107 D:/IITB-RISC-23/pipelineReg5.vhd|
+!i113 1
+R11
+R12
+Aarch_reg
+R2
+R3
+DEx4 work 12 pipelinereg5 0 22 5IkA32kgnJOde?9z6U:jN1
+!i122 16
+l18
+R90
+VRmY>im<1<79CDY_^ReN2I1
+!s100 ln>cHc0feBkE@Lznj;Db43
+R6
+31
+R138
+!i10b 1
+R139
+R145
+R146
+!i113 1
+R11
+R12
+Epriorityencoder
+R122
+R2
+R3
+!i122 15
+R0
+Z147 8D:/IITB-RISC-23/Priority_encoder.vhd
+Z148 FD:/IITB-RISC-23/Priority_encoder.vhd
+l0
+L6 1
+V2:lZdDcFN9`haD4=RH>K@3
+!s100 8ghhifLV=JC?=b0ZIfh;20
+R6
+31
+R138
+!i10b 1
+R139
+Z149 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/Priority_encoder.vhd|
+Z150 !s107 D:/IITB-RISC-23/Priority_encoder.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 15 priorityencoder 0 22 2:lZdDcFN9`haD4=RH>K@3
+!i122 15
+l19
+L16 90
+VhJ_Kk?cbIehhf[AmWheH^1
+!s100 hc2k1LjBR_YUPmMCUe6en3
+R6
+31
+R138
+!i10b 1
+R139
+R149
+R150
+!i113 1
+R11
+R12
+Eprocessor
+Z151 w1683388331
+Z152 DPx8 synopsys 10 attributes 0 22 dc>JdEHRM@6GGENe5bZ?D1
+Z153 DPx4 ieee 14 std_logic_misc 0 22 dN]HY6l5ohPcZ:TaC@B;53
+R2
+R3
+!i122 14
+R0
+Z154 8D:/IITB-RISC-23/Processor.vhd
+Z155 FD:/IITB-RISC-23/Processor.vhd
+l0
+L8 1
+VmC?R2oj8XjF:3jZ01Po^l0
+!s100 j<3hBDV?A;6Pm]eV?`OT51
+R6
+31
+R138
+!i10b 1
+R139
+Z156 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/Processor.vhd|
+Z157 !s107 D:/IITB-RISC-23/Processor.vhd|
+!i113 1
+R11
+R12
+Astruct
+R152
+R153
+R2
+R3
+DEx4 work 9 processor 0 22 mC?R2oj8XjF:3jZ01Po^l0
+!i122 14
+l327
+L14 374
+V<g:2e9m07]`mP[YP0kOWi3
+!s100 hZ4l75WaRI@AI9_HQ2Sb52
+R6
+31
+R138
+!i10b 1
+R139
+R156
+R157
+!i113 1
+R11
+R12
+Ereg_file
+Z158 w1683389926
+R37
+R2
+R3
+!i122 12
+R0
+Z159 8D:/IITB-RISC-23/Register_file.vhd
+Z160 FD:/IITB-RISC-23/Register_file.vhd
+l0
+L7 1
+V0BiL[[;>KkcBoAcST_6@h0
+!s100 H9lfH;l]nEn:TgAL2LI[13
+R6
+31
+R138
+!i10b 1
+R139
+Z161 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/Register_file.vhd|
+Z162 !s107 D:/IITB-RISC-23/Register_file.vhd|
+!i113 1
+R11
+R12
+Astruct
+R37
+R2
+R3
+DEx4 work 8 reg_file 0 22 0BiL[[;>KkcBoAcST_6@h0
+!i122 12
+l27
+L21 85
+V3YjU0QVZn5SKS?jU]LWMB3
+!s100 jf[6hX]1ELQYM@Qef?93B2
+R6
+31
+R138
+!i10b 1
+R139
+R161
+R162
+!i113 1
+R11
+R12
+Ereg_with_reset
+R100
+R2
+R3
+!i122 13
+R0
+Z163 8D:/IITB-RISC-23/reg_with_reset.vhd
+Z164 FD:/IITB-RISC-23/reg_with_reset.vhd
+l0
+L7 1
+VkeS7TJda9@NHfX?:NdA@I0
+!s100 3ZO:mT7i_49[4]`A7cFAM2
+R6
+31
+R138
+!i10b 1
+R139
+Z165 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/reg_with_reset.vhd|
+Z166 !s107 D:/IITB-RISC-23/reg_with_reset.vhd|
+!i113 1
+R11
+R12
+Aarch_reg
+R2
+R3
+DEx4 work 14 reg_with_reset 0 22 keS7TJda9@NHfX?:NdA@I0
+!i122 13
+l18
+L16 20
+VRRkhjDcQ0_lGYm`56]VF23
+!s100 4dF9:B:F07S?KnQQ_g7dO2
+R6
+31
+R138
+!i10b 1
+R139
+R165
+R166
+!i113 1
+R11
+R12
+Ese6
+Z167 w1683388184
+R2
+R3
+!i122 11
+R0
+Z168 8D:/IITB-RISC-23/SE6.vhd
+Z169 FD:/IITB-RISC-23/SE6.vhd
+l0
+L5 1
+VOdz1bY9BfeQec8C:m_k6N0
+!s100 ^4zLMCbeJmO_;[Jjk@D1V1
+R6
+31
+R138
+!i10b 1
+R139
+Z170 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/SE6.vhd|
+Z171 !s107 D:/IITB-RISC-23/SE6.vhd|
+!i113 1
+R11
+R12
+Aextend_bits
+R2
+R3
+DEx4 work 3 se6 0 22 Odz1bY9BfeQec8C:m_k6N0
+!i122 11
+l15
+L11 22
+Vf=Vnd<eH4JGF9@?5l4j750
+!s100 OeB81ZH_DB@PoKB8dUT=j3
+R6
+31
+R138
+!i10b 1
+R139
+R170
+R171
+!i113 1
+R11
+R12
+Ese9
+R167
+R2
+R3
+!i122 10
+R0
+Z172 8D:/IITB-RISC-23/SE9.vhd
+Z173 FD:/IITB-RISC-23/SE9.vhd
+l0
+L5 1
+VTlN>k2=9MDB3n4iSjUhKA3
+!s100 bL[IhI5R?4_<e7d@0o]L<0
+R6
+31
+R138
+!i10b 1
+R139
+Z174 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/SE9.vhd|
+Z175 !s107 D:/IITB-RISC-23/SE9.vhd|
+!i113 1
+R11
+R12
+Aextend_bits
+R2
+R3
+DEx4 work 3 se9 0 22 TlN>k2=9MDB3n4iSjUhKA3
+!i122 10
+l15
+L11 18
+V>Ic0kiX@WjKX[8L=Zh_Ze3
+!s100 nS[R1Z8dZ=ZkgdhG3hE:O3
+R6
+31
+R138
+!i10b 1
+R139
+R174
+R175
+!i113 1
+R11
+R12
+Estage1
+Z176 w1683388183
+R2
+R3
+!i122 9
+R0
+Z177 8D:/IITB-RISC-23/Stage1.vhd
+Z178 FD:/IITB-RISC-23/Stage1.vhd
+l0
+L5 1
+VBH1Y?_k`ZX0IO:6UI8fWI2
+!s100 J:VaW8Y5QYi^CL5OCj37N2
+R6
+31
+R138
+!i10b 1
+R139
+Z179 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/Stage1.vhd|
+Z180 !s107 D:/IITB-RISC-23/Stage1.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 6 stage1 0 22 BH1Y?_k`ZX0IO:6UI8fWI2
+!i122 9
+l56
+L22 50
+V;ok27[U40PY7iQooa`kU71
+!s100 lYg6BTW^[M?7QLd_RKNT;0
+R6
+31
+R138
+!i10b 1
+R139
+R179
+R180
+!i113 1
+R11
+R12
+Estage2
+R176
+R2
+R3
+!i122 8
+R0
+Z181 8D:/IITB-RISC-23/Stage2.vhd
+Z182 FD:/IITB-RISC-23/Stage2.vhd
+l0
+L7 1
+V6PbR@;6;_`jOFS1Yo6la:0
+!s100 o3E<ciI]WA[B9lIhhAD<^1
+R6
+31
+Z183 !s110 1683391305
+!i10b 1
+Z184 !s108 1683391305.000000
+Z185 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/Stage2.vhd|
+Z186 !s107 D:/IITB-RISC-23/Stage2.vhd|
+!i113 1
+R11
+R12
+Acontrol_stage
+R2
+R3
+DEx4 work 6 stage2 0 22 6PbR@;6;_`jOFS1Yo6la:0
+!i122 8
+l51
+L18 51
+V=HSRib2HlA1?SAeXTiEQZ2
+!s100 LHc<JAHGF5lUbaV1aWNKM3
+R6
+31
+R183
+!i10b 1
+R184
+R185
+R186
+!i113 1
+R11
+R12
+Estage3
+Z187 w1683388180
+R2
+R3
+!i122 7
+R0
+Z188 8D:/IITB-RISC-23/stage3.vhd
+Z189 FD:/IITB-RISC-23/stage3.vhd
+l0
+L5 1
+VhmdB:`Fh1;Hg^min:T;`B3
+!s100 <cIC5XO32RfDFSR?aBoQC3
+R6
+31
+R183
+!i10b 1
+R184
+Z190 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/stage3.vhd|
+Z191 !s107 D:/IITB-RISC-23/stage3.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 6 stage3 0 22 hmdB:`Fh1;Hg^min:T;`B3
+!i122 7
+l74
+L29 60
+VUi7K;[`h90ZfKhG59QATi3
+!s100 89AYP`Km>gHdD5dniT[GA3
+R6
+31
+R183
+!i10b 1
+R184
+R190
+R191
+!i113 1
+R11
+R12
+Estage4
+R176
+R2
+R3
+!i122 6
+R0
+Z192 8D:/IITB-RISC-23/Stage4.vhd
+Z193 FD:/IITB-RISC-23/Stage4.vhd
+l0
+L5 1
+VcNKHnZDRb2^A;EP@254MV1
+!s100 _?9Ca?bJ0Z:>6hk5]EA<V3
+R6
+31
+R183
+!i10b 1
+R184
+Z194 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/Stage4.vhd|
+Z195 !s107 D:/IITB-RISC-23/Stage4.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 6 stage4 0 22 cNKHnZDRb2^A;EP@254MV1
+!i122 6
+l160
+L31 196
+V<ooQQ^k_Az9R5S8=cgGkf1
+!s100 mVaj@`FnoN5=J390DE;`W0
+R6
+31
+R183
+!i10b 1
+R184
+R194
+R195
+!i113 1
+R11
+R12
+Estage5
+R187
+R2
+R3
+!i122 5
+R0
+Z196 8D:/IITB-RISC-23/Stage5.vhd
+Z197 FD:/IITB-RISC-23/Stage5.vhd
+l0
+L5 1
+VmN=?S<>^]^I4OPd5mKZ_03
+!s100 lG@Y2F4]B=mRD5gfL:zWA1
+R6
+31
+R183
+!i10b 1
+R184
+Z198 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/Stage5.vhd|
+Z199 !s107 D:/IITB-RISC-23/Stage5.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 6 stage5 0 22 mN=?S<>^]^I4OPd5mKZ_03
+!i122 5
+l44
+L19 33
+V26ON^mM;OL6cgk^e@DViX1
+!s100 5JDBd]R`K1D32]<PgHke12
+R6
+31
+R183
+!i10b 1
+R184
+R198
+R199
+!i113 1
+R11
+R12
+Estage6
+Z200 w1683388182
+R152
+R153
+R2
+R3
+!i122 4
+R0
+Z201 8D:/IITB-RISC-23/Stage6.vhd
+Z202 FD:/IITB-RISC-23/Stage6.vhd
+l0
+L10 1
+V5gjH^ji0dk;Ll:DoFo]D<0
+!s100 ]bNjdGl8`CW8kM<6^1aZQ0
+R6
+31
+R183
+!i10b 1
+R184
+Z203 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/Stage6.vhd|
+Z204 !s107 D:/IITB-RISC-23/Stage6.vhd|
+!i113 1
+R11
+R12
+Astruct
+R152
+R153
+R2
+R3
+DEx4 work 6 stage6 0 22 5gjH^ji0dk;Ll:DoFo]D<0
+!i122 4
+l36
+L27 22
+VOR?X<z7?TL<4I1H8A[J@P3
+!s100 ^`5B0WIE2j;3X^1[5:Gk42
+R6
+31
+R183
+!i10b 1
+R184
+R203
+R204
+!i113 1
+R11
+R12
+Esubtract
+R200
+R2
+R3
+!i122 3
+R0
+Z205 8D:/IITB-RISC-23/SUBTRACT.vhd
+Z206 FD:/IITB-RISC-23/SUBTRACT.vhd
+l0
+L4 1
+VShKG7^h7IE_1>[F@V9LlP0
+!s100 e7CId=b0D[JMRhUTR5LYR3
+R6
+31
+R183
+!i10b 1
+R184
+Z207 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/SUBTRACT.vhd|
+Z208 !s107 D:/IITB-RISC-23/SUBTRACT.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 8 subtract 0 22 ShKG7^h7IE_1>[F@V9LlP0
+!i122 3
+l21
+L11 24
+VXS7fU1114:ZU^FMWlSB6?3
+!s100 7`CH>ZIAj7YKiKVd9I]=]0
+R6
+31
+R183
+!i10b 1
+R184
+R207
+R208
+!i113 1
+R11
+R12
+Etestbench
+Z209 w1683304535
+R3
+R2
+!i122 44
+R0
+Z210 8D:/IITB-RISC-23/Testbench.vhd
+Z211 FD:/IITB-RISC-23/Testbench.vhd
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+Z212 !s110 1683391310
+!i10b 1
+R8
+Z213 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/Testbench.vhd|
+!s107 D:/IITB-RISC-23/Testbench.vhd|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 44
+l69
+L9 132
+VB3U6[jVhZ^En:e32@4l7U0
+!s100 Y>=<RDE4@MY]5FIoO:FWc0
+R6
+31
+R212
+!i10b 1
+R8
+R213
+Z214 !s107 D:/IITB-RISC-23/Testbench.vhd|
+!i113 1
+R11
+R12
+Exnor_2
+R1
+R2
+R3
+!i122 35
+R0
+R22
+R23
+l0
+L113 1
+VYmZa`=[Sj]6Zh9_O7]F;L0
+!s100 SMA^OIVGhoiKW^3FaJ8oW3
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 xnor_2 0 22 YmZa`=[Sj]6Zh9_O7]F;L0
+!i122 35
+l118
+L117 4
+VAJO?a^^jGBIX`G]K^jl@P2
+!s100 =aKk4IJ>H;6]KzcaGm^Mn0
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Exor_16
+R200
+R2
+R3
+!i122 2
+R0
+Z215 8D:/IITB-RISC-23/XOR_16.vhd
+Z216 FD:/IITB-RISC-23/XOR_16.vhd
+l0
+L5 1
+VoVD2;_nZHlT:7mz[UL]0Y1
+!s100 F2[<G25JY^[=dT:CLkhW23
+R6
+31
+R183
+!i10b 1
+R184
+Z217 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/XOR_16.vhd|
+Z218 !s107 D:/IITB-RISC-23/XOR_16.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 6 xor_16 0 22 oVD2;_nZHlT:7mz[UL]0Y1
+!i122 2
+l13
+L11 6
+VK8d<]@bWaa_YNVl;c0PYJ0
+!s100 `<SgH:WkdmiHLZcaBM8:_2
+R6
+31
+R183
+!i10b 1
+R184
+R217
+R218
+!i113 1
+R11
+R12
+Exor_2
+R1
+R2
+R3
+!i122 35
+R0
+R22
+R23
+l0
+L102 1
+VDUd5fH`?6?dZ[>AnHc54;2
+!s100 h::V4HH0c4?lKoYnW6M?E3
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 xor_2 0 22 DUd5fH`?6?dZ[>AnHc54;2
+!i122 35
+l107
+L106 4
+VT`Lnd3[S1KOT?Q^d?zomG2
+!s100 85OK8@mo8d3=fmz<5BnRf2
+R6
+31
+R7
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R11
+R12
+Ezero_appender_carry
+Z219 w1683388181
+R2
+R3
+!i122 1
+R0
+Z220 8D:/IITB-RISC-23/zero_appender_Carry.vhd
+Z221 FD:/IITB-RISC-23/zero_appender_Carry.vhd
+l0
+L5 1
+VDCSY21Gl;;P^jQE_dH:`h0
+!s100 69^:`Sdn:m7A;Nf?o0]e40
+R6
+31
+R183
+!i10b 1
+R184
+Z222 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/zero_appender_Carry.vhd|
+Z223 !s107 D:/IITB-RISC-23/zero_appender_Carry.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 19 zero_appender_carry 0 22 DCSY21Gl;;P^jQE_dH:`h0
+!i122 1
+l15
+Z224 L11 10
+V;MzNoC:XM@aGzk@e15Oll2
+!s100 B?Q7[KN4Kc;e0PN308cWm3
+R6
+31
+R183
+!i10b 1
+R184
+R222
+R223
+!i113 1
+R11
+R12
+Ezero_appender_imm
+R219
+R2
+R3
+!i122 0
+R0
+Z225 8D:/IITB-RISC-23/zero_appender_Imm.vhd
+Z226 FD:/IITB-RISC-23/zero_appender_Imm.vhd
+l0
+L5 1
+V9jzT>bR3:ILEoScA5G:9?3
+!s100 H[QQ8d`8UEHlDJO4jgMkC0
+R6
+31
+R183
+!i10b 1
+R184
+Z227 !s90 -reportprogress|300|-93|-work|work|D:/IITB-RISC-23/zero_appender_Imm.vhd|
+Z228 !s107 D:/IITB-RISC-23/zero_appender_Imm.vhd|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 17 zero_appender_imm 0 22 9jzT>bR3:ILEoScA5G:9?3
+!i122 0
+l15
+R224
+V7dH32l?NaDSZE8Q2=UEPl0
+!s100 ]SY<>G9f_Pg2R56IFf;;c1
+R6
+31
+R183
+!i10b 1
+R184
+R227
+R228
+!i113 1
+R11
+R12

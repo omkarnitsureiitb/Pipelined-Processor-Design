@@ -1,0 +1,786 @@
+# Reading pref.tcl
+# do DUT_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/IITB-RISC-23/zero_appender_Imm.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:45 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/zero_appender_Imm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity zero_Appender_Imm
+# -- Compiling architecture Struct of zero_Appender_Imm
+# End time: 22:11:45 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/zero_appender_Carry.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:45 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/zero_appender_Carry.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity zero_Appender_Carry
+# -- Compiling architecture Struct of zero_Appender_Carry
+# End time: 22:11:45 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/XOR_16.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:45 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/XOR_16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity XOR_16
+# -- Compiling architecture Struct of XOR_16
+# End time: 22:11:45 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/SUBTRACT.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:45 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/SUBTRACT.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SUBTRACT
+# -- Compiling architecture Struct of SUBTRACT
+# End time: 22:11:45 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/Stage6.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:45 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/Stage6.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity stage6
+# -- Compiling architecture Struct of stage6
+# End time: 22:11:45 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/Stage5.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:45 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/Stage5.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity stage5
+# -- Compiling architecture Struct of stage5
+# End time: 22:11:45 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/Stage4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:45 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/Stage4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity stage4
+# -- Compiling architecture struct of stage4
+# End time: 22:11:45 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/stage3.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:45 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/stage3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity stage3
+# -- Compiling architecture Struct of stage3
+# End time: 22:11:45 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/Stage2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:45 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/Stage2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity stage2
+# -- Compiling architecture control_stage of stage2
+# End time: 22:11:45 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/Stage1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:46 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/Stage1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Stage1
+# -- Compiling architecture Struct of Stage1
+# End time: 22:11:46 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/SE9.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:46 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/SE9.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SE9
+# -- Compiling architecture extend_BITs of SE9
+# End time: 22:11:46 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/SE6.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:46 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/SE6.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity SE6
+# -- Compiling architecture extend_BITs of SE6
+# End time: 22:11:46 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/Register_file.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:46 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/Register_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg_file
+# -- Compiling architecture Struct of reg_file
+# End time: 22:11:46 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/reg_with_reset.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:46 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/reg_with_reset.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg_with_reset
+# -- Compiling architecture arch_Reg of reg_with_reset
+# End time: 22:11:46 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/Processor.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:46 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity Processor
+# -- Compiling architecture Struct of Processor
+# End time: 22:11:46 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/Priority_encoder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:46 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/Priority_encoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PriorityEncoder
+# -- Compiling architecture Struct of PriorityEncoder
+# End time: 22:11:46 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/pipelineReg5.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:46 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/pipelineReg5.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pipelineReg5
+# -- Compiling architecture arch_Reg of pipelineReg5
+# End time: 22:11:46 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/pipelineReg4.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:46 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/pipelineReg4.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pipelineReg4
+# -- Compiling architecture arch_Reg of pipelineReg4
+# End time: 22:11:46 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/pipelineReg3.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:47 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/pipelineReg3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pipelineReg3
+# -- Compiling architecture arch_Reg of pipelineReg3
+# End time: 22:11:47 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/pipelineReg2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:47 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/pipelineReg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pipelineReg2
+# -- Compiling architecture arch_Reg of pipelineReg2
+# End time: 22:11:47 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/pipelineReg1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:47 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/pipelineReg1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pipelineReg1
+# -- Compiling architecture arch_Reg of pipelineReg1
+# End time: 22:11:47 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/PC_Incrementer.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:47 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/PC_Incrementer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PC_Incrementer
+# -- Compiling architecture Struct of PC_Incrementer
+# End time: 22:11:47 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/NOR_ZBIT.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:47 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/NOR_ZBIT.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity NOR_ZBIT
+# -- Compiling architecture Struct of NOR_ZBIT
+# End time: 22:11:47 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/NAND_16.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:47 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/NAND_16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity NAND_16
+# -- Compiling architecture Struct of NAND_16
+# End time: 22:11:47 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/mux16to1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:47 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/mux16to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux16to1
+# -- Compiling architecture Struct of mux16to1
+# End time: 22:11:47 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/mux4to1_for_BLE.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:47 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/mux4to1_for_BLE.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux4to1_for_BLE
+# -- Compiling architecture archmux of mux4to1_for_BLE
+# End time: 22:11:47 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/mux4to1_3bits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:47 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/mux4to1_3bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux4to1_3bits
+# -- Compiling architecture arch_mux4to1_3bits of mux4to1_3bits
+# End time: 22:11:48 on May 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/mux4to1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:48 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/mux4to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux4to1
+# -- Compiling architecture arch_mux4to1 of mux4to1
+# End time: 22:11:48 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/mux2x1_16.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:48 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/mux2x1_16.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2to1
+# -- Compiling architecture arch_mux2to1 of mux2to1
+# End time: 22:11:48 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/mux2to1_16bits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:48 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/mux2to1_16bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2to1_16bits
+# -- Compiling architecture arch_mux2to1_16bits of mux2to1_16bits
+# End time: 22:11:48 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/mux2to1_3bits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:48 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/mux2to1_3bits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2to1_3bits
+# -- Compiling architecture arch_mux2to1_3bits of mux2to1_3bits
+# End time: 22:11:48 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/MUX_8To1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:48 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/MUX_8To1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity MUX_8To1
+# -- Compiling architecture Struct of MUX_8To1
+# End time: 22:11:48 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/mux_2to1_8.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:48 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/mux_2to1_8.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux_2to1_8
+# -- Compiling architecture arch_mux2to1 of mux_2to1_8
+# End time: 22:11:48 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/InstructionMemory.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:48 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/InstructionMemory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity InstrMemory
+# -- Compiling architecture Struct of InstrMemory
+# End time: 22:11:48 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/hazard_unit.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:48 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/hazard_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity hazard_unit
+# -- Compiling architecture Behavourial of hazard_unit
+# End time: 22:11:48 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/Gates.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:48 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/Gates.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package Gates
+# -- Compiling entity INVERTER
+# -- Compiling architecture Equations of INVERTER
+# -- Compiling entity AND_2
+# -- Compiling architecture Equations of AND_2
+# -- Compiling entity NAND_2
+# -- Compiling architecture Equations of NAND_2
+# -- Compiling entity OR_2
+# -- Compiling architecture Equations of OR_2
+# -- Compiling entity NOR_2
+# -- Compiling architecture Equations of NOR_2
+# -- Compiling entity XOR_2
+# -- Compiling architecture Equations of XOR_2
+# -- Compiling entity XNOR_2
+# -- Compiling architecture Equations of XNOR_2
+# -- Compiling entity HALF_ADDER
+# -- Compiling architecture Equations of HALF_ADDER
+# End time: 22:11:49 on May 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/DUT.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:49 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/DUT.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DUT
+# -- Compiling architecture DutWrap of DUT
+# End time: 22:11:49 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/data_memory.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:49 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/data_memory.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity DataMemory
+# -- Compiling architecture data of DataMemory
+# End time: 22:11:49 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/controller.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:49 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/controller.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity controller_logic
+# -- Compiling architecture controller of controller_logic
+# End time: 22:11:49 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/complementer.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:49 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/complementer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Complementer
+# -- Compiling architecture Struct of Complementer
+# End time: 22:11:49 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/bitRegister.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:49 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/bitRegister.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bitReg
+# -- Compiling architecture arch_Reg of bitReg
+# End time: 22:11:49 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/ALU.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:49 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/ALU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ALU
+# -- Compiling architecture Struct of ALU
+# End time: 22:11:49 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/ADD.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:49 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/ADD.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ADD
+# -- Compiling architecture Struct of ADD
+# End time: 22:11:49 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/IITB-RISC-23/ADD_4BIT.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:49 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/ADD_4BIT.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package Gates
+# -- Compiling entity FULL_ADDER1
+# -- Compiling architecture Struct of FULL_ADDER1
+# -- Compiling entity ADD_4BIT
+# -- Compiling architecture Struct of ADD_4BIT
+# End time: 22:11:49 on May 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/IITB-RISC-23/Testbench.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:11:49 on May 06,2023
+# vcom -reportprogress 300 -93 -work work D:/IITB-RISC-23/Testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Testbench
+# -- Compiling architecture Behave of Testbench
+# End time: 22:11:50 on May 06,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" Testbench 
+# Start time: 22:11:50 on May 06,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(behave)
+# Loading work.dut(dutwrap)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.processor(struct)
+# Loading work.stage1(struct)
+# Loading work.mux2to1(arch_mux2to1)
+# Loading work.pc_incrementer(struct)
+# Loading work.gates
+# Loading work.add_4bit(struct)
+# Loading work.full_adder1(struct)
+# Loading work.xor_2(equations)
+# Loading work.and_2(equations)
+# Loading work.or_2(equations)
+# Loading ieee.numeric_std(body)
+# Loading work.instrmemory(struct)
+# Loading work.reg_with_reset(arch_reg)
+# Loading work.mux16to1(struct)
+# Loading work.pipelinereg1(arch_reg)
+# Loading work.stage2(control_stage)
+# Loading work.controller_logic(controller)
+# Loading work.mux_2to1_8(arch_mux2to1)
+# Loading work.priorityencoder(struct)
+# Loading work.pipelinereg2(arch_reg)
+# Loading work.stage3(struct)
+# Loading work.mux2to1_16bits(arch_mux2to1_16bits)
+# Loading work.mux4to1_3bits(arch_mux4to1_3bits)
+# Loading work.mux2to1_3bits(arch_mux2to1_3bits)
+# Loading work.reg_file(struct)
+# Loading work.pipelinereg3(arch_reg)
+# Loading work.stage4(struct)
+# Loading work.complementer(struct)
+# Loading work.zero_appender_carry(struct)
+# Loading work.se6(extend_bits)
+# Loading work.se9(extend_bits)
+# Loading work.bitreg(arch_reg)
+# Loading work.mux_8to1(struct)
+# Loading work.mux4to1(arch_mux4to1)
+# Loading work.add(struct)
+# Loading work.alu(struct)
+# Loading work.nand_16(struct)
+# Loading work.xor_16(struct)
+# Loading work.subtract(struct)
+# Loading work.nor_zbit(struct)
+# Loading work.mux4to1_for_ble(archmux)
+# Loading work.zero_appender_imm(struct)
+# Loading work.hazard_unit(behavourial)
+# Loading work.pipelinereg4(arch_reg)
+# Loading work.stage5(struct)
+# Loading work.datamemory(data)
+# Loading work.pipelinereg5(arch_reg)
+# Loading work.stage6(struct)
+# ** Warning: Design size of 12958 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/dut_instance/add_instance/Carry has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /testbench/dut_instance/add_instance/Zero has no driver.
+# This port will contribute value (U) to the signal network.
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut_instance/add_instance/st1/inst1
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 19 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 38 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 57 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 76 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 95 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 114 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 133 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 152 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 171 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 190 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 209 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 228 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 247 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 266 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 285 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 304 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 323 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 342 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 361 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 380 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 399 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 418 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 437 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 456 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 475 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 494 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 513 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 532 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 551 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 570 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 589 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 608 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 627 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 646 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 665 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 684 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 703 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 722 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 741 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 760 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 779 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 798 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 817 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 836 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 855 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 874 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 893 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 912 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 931 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 950 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 969 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 988 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1007 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1026 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1045 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1064 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1083 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1102 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1121 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1140 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1159 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1178 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1197 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1216 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1235 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1254 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1273 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1292 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1311 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1330 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1349 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1368 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1387 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1406 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1425 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1444 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1463 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1482 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1501 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1520 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1539 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1558 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1577 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1596 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1615 ns  Iteration: 0  Instance: /testbench
+# ** Error: (vsim-3549) TEXTIO procedure READ(BIT_VECTOR) : Wrong BIT_VECTOR length. Expected 2, found 0.
+#    Time: 1634 ns  Iteration: 0  Instance: /testbench
+# ** Note: SUCCESS, all tests passed.
+#    Time: 1653 ns  Iteration: 0  Instance: /testbench
+# End time: 22:12:11 on May 06,2023, Elapsed time: 0:00:21
+# Errors: 87, Warnings: 4
